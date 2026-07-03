@@ -23,6 +23,19 @@
 - **Swingarm.** Was "sized for the 160 rear" → now 170; confirm tire-to-arm and tire-to-chain clearance at the wider section.
 - **Front speed rating — homologation check.** The STR front 120/70-17 is rated **58H (210 km/h)**. A standalone CP3 runs near that, and EU/UK approval requires the fitted tire's speed rating to meet or exceed the certified top speed. Confirm the 58H front is acceptable (or restrict/declare top speed accordingly) before treating the front size as final. Rear 72V (240 km/h) is clear. *(Logged in `emissions_certification.md`.)*
 
+### Geometry targets
+
+*Targets to design the frame + yokes to, and **validate on the actual STR tire** (a tall ADV profile steers slower than sport rubber — tire note). Trail = featherbed neck rake + yoke offset, set at the bespoke yoke (§2); ride height absorbs the 170/60-17's ~6 mm rise at shock-order.*
+
+| Parameter | Target | Status |
+|---|---|---|
+| Rake (head angle) | ~24.5° | `[PENDING]` validate on STR |
+| Trail | ~100 mm | `[PENDING]` — set via yoke offset (§2) |
+| Wheelbase | ~1,430 mm | `[PENDING]` |
+| Seat height | ~810 mm | `[PENDING]` (`bodywork.md`) |
+| Weight distribution | ~50/50 static, low CoG | `[PENDING]` (`build.md` §1) |
+| Ride height | Set on the STR at shock-order (§1 rear shock) | `[PENDING]` |
+
 ### Rear brake
 
 *Brembo, matched to the front (§2). Single rear disc on the Kineo rear wheel; the master + pedal integrate with the rearsets (`bodywork.md`). Keys off the disc, same as the front.*
@@ -44,7 +57,7 @@
 | Chain | Premium X/Z-ring — DID / RK; **520** for lightness on a ~117 hp triple (525 if load margin wanted) | `[BUY]` |
 | Front sprocket | Steel, on the CP3 countershaft; tooth count set by the gearing choice | `[BUY]` |
 | Rear sprocket | On the Kineo **8-pin cush-drive + Ergal sprocket carrier** (§1); alloy or steel | `[BUY]` |
-| Gearing | **Final-drive ratio is a decision, not a default** — sets top speed + acceleration. Bias café/road; **must reconcile with the tire speed rating** (front 58H = 210 km/h — tire note) and the certified top speed | `[PENDING]` |
+| Gearing | **Final-drive ratio is a decision, not a default** — sets top speed + acceleration. Gear to the **~200 km/h / ≤210 km/h top-speed target** (`build.md` §1), which keeps the **58H front (210 km/h — tire note)** legal; bias café/road within that ceiling | `[PENDING]` |
 | Speed pickup | Wheel-speed signal for the cockpit speedo + any ABS — source (front wheel / countershaft) read by the ECU (`electronics.md`) | `[PENDING]` |
 
 **Gearing ↔ homologation.** Top speed set by the final drive must not exceed the fitted tire's speed rating; if a taller ratio pushes past the 58H front's 210 km/h, either regear, restrict/declare top speed, or revisit the front tire (tire note + `emissions_certification.md`).

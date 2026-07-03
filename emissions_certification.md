@@ -34,7 +34,7 @@ Pass EU individual approval to Euro 5+ and it comfortably clears UK approval and
 - [ ] Catalytic converter (collector)
 - [ ] Evap / charcoal canister + purge valve
 - [ ] Catalysed exhaust system — ties to the open exhaust decision in `engine.md`
-- [ ] **Tire speed rating vs certified top speed** — fitted tires must be rated ≥ the bike's approved top speed. Front is Pirelli Scorpion Rally STR 120/70-17 **58H (210 km/h)**; a standalone CP3 runs near that, so confirm 58H clears the certified top speed (or declare/restrict top speed) before approval. Rear 170/60-17 72V (240 km/h) is clear. (See tire note in `chassis.md`.)
+- [ ] **Tire speed rating vs certified top speed** — fitted tires must be rated ≥ the bike's approved top speed. Front is Pirelli Scorpion Rally STR 120/70-17 **58H (210 km/h)**; a standalone CP3 runs near that, so confirm 58H clears the certified top speed (or declare/restrict top speed) before approval. Rear 170/60-17 72V (240 km/h) is clear. **Addressed by the ≤210 km/h top-speed target (`build.md` §1)** — gear/declare to stay within the 58H front; confirm at approval. (See tire note in `chassis.md`.)
 
 ## Road-legal equipment (approval beyond emissions)
 
