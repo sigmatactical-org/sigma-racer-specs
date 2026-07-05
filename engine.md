@@ -28,6 +28,7 @@
 - The donor may need an **immobiliser / CAN handshake** to run; the custom ECU must replicate or cleanly delete it.
 - Cheapest path to a new engine is a new **MT-09** — harvest engine + throttle bodies + sensors + wiring reference; the rest of the bike is surplus.
 - **Prototyping:** develop and bench the ECU on a cheap **used CP3** (used MT-09) before committing the new engine — same trigger, sensors and ride-by-wire as the build engine, so the work carries straight across.
+- **Production supply (for-sale scale):** harvesting a whole new donor per bike **does not scale** (`build.md` §2d — the surplus donor wrecks per-unit margin). For volume, pursue a **Yamaha crate-engine / OEM supply arrangement**; the donor-harvest model is fine for prototyping and the first few units only.
 
 ## 2 · Engine upgrades (premium)
 

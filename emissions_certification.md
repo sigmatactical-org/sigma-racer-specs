@@ -29,6 +29,20 @@ Certify the type to Euro 5+ and the same hardware clears UK, Canadian and Mexica
 
 **Net:** you type-approve the **type** once per regime, then build every unit to it under Conformity of Production. **ABS and OBD are now mandatory** (the one-off exemptions no longer apply). US is deferred to a later phase.
 
+## Market rollout — phased (crawl, walk, run)
+
+*Engineer once to the highest standard (Euro 5+ + ABS + OBD + RbW safety case — the "one spec for all markets"); then **certify market-by-market**, each earlier market funding and de-risking the next. The bike doesn't change per phase — only the paperwork/testing does.*
+
+| Phase | Market | Why here | Gate to advance |
+|---|---|---|---|
+| **0** | *(engineering readiness)* | ECU proven on the mule → first running, safe, Euro-5+-capable bike | A safe running bike exists — **nothing sells before this** |
+| **1** | 🇲🇽 **Mexico** (home / pilot) | Lowest bar for motorcycles — emissions NOM + noise NOM; **light safety regime (no ABS mandate, no type-approval program)**; home market → no import friction. Prove production, CoP, crate-engine supply, DfM and unit economics with paying customers | Profitable small-batch sales + stable production → funds the EU program |
+| **2** | 🇪🇺 **EU** + 🇬🇧 **UK** | The premium market that justifies the pricing, but the **biggest NRE**: small-series type-approval (Euro 5+ OBD, ABS, EMC, safety case, Technical Service, CoP). UK GB small-series rides alongside (aligned to EU) | EU small-series type-approval granted → sell across EU + UK |
+| **3** | 🇨🇦 **Canada** | CMVSS + National Safety Mark + EPA-harmonised emissions; **CMVSS harmonises with US FMVSS → pre-builds the US safety case** | CMVSS compliance + National Safety Mark |
+| **4** | 🇺🇸 **US** *(deferred, largest)* | EPA engine-family cert + CARB + NHTSA/FMVSS; leverages Canada's FMVSS-harmonised work, but EPA/CARB emissions is a separate, expensive cert | Deferred until volume justifies the cost |
+
+**Ordering logic:** MX (learn cheap at home) → EU/UK (the real business, funded by MX) → CA (FMVSS bridge) → US (largest, last). *Alternative — EU-first ("certify to the hardest standard first") — is defensible but front-loads the biggest NRE before demand/production are proven; the MX-first crawl-walk-run is lower-risk.* Note: Mexico accepts only its **own NOM certificate** (no foreign-cert reciprocity), so MX is certified on its own — but the bar sits far below EU/US.
+
 ## Manufacturer obligations (selling, not building)
 
 Obligations a one-off never carried — these are now core scope:
