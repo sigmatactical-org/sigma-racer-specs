@@ -55,8 +55,9 @@ Obligations a one-off never carried — these are now core scope:
 
 ## Hardware checklist
 
-- [ ] Closed-loop stoichiometric tune (ECU + LSU 4.9 wideband)
-- [ ] Catalytic converter (collector)
+- [ ] Closed-loop stoichiometric tune (ECU + **pre-cat** LSU 4.9 wideband)
+- [ ] Catalytic converter (in the collector, near-engine for light-off)
+- [ ] **Post-cat O₂ (catalyst monitoring, OBD)** — factory Yamaha narrowband repurposed post-cat; ECU compares pre/post-cat switching (`efi.md` §8)
 - [ ] Evap / charcoal canister + purge valve
 - [ ] Catalysed exhaust system — ties to the open exhaust decision in `engine.md`
 - [ ] **OBD to the Euro 5 stage** — MIL + catalyst/misfire/sensor monitoring in the ECU (`efi.md` §8)

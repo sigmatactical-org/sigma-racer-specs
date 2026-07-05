@@ -25,7 +25,8 @@ On a harvested CP3 you **interface to the engine's factory sensors** (characteri
 | MAP | Primary load (speed-density) | **Use the CP3 factory intake-pressure sensor**; confirm its type (MAP vs. MAF) on the engine. NA engine → a ~1-bar sensor is correct. Only add an aftermarket MAP if the factory part can't be read, and size it **~1-bar (not 3-bar boost-grade)** — a 3-bar wastes two-thirds of its range on an NA triple |
 | CLT | Warmup / thermal comp | CP3 factory coolant-temp |
 | IAT | Air-density correction | CP3 factory intake-air-temp |
-| Wideband O₂ | Closed-loop fuel + diag | **Add** LSU 4.9 + CJ125 controller — single sensor post-collector for the triple. *(The one sensor with no Yamaha equivalent: the factory narrowband can't support tuning, so this stays Bosch.)* |
+| Wideband O₂ (pre-cat) | Closed-loop fuel + tuning | **Add** LSU 4.9 + CJ125 controller — **pre-cat**, post-collector. The one sensor with no Yamaha equivalent (factory narrowband can't support tuning), so it stays Bosch |
+| O₂ post-cat | Catalyst-efficiency monitoring (OBD) | **Repurpose the factory Yamaha narrowband** post-cat — Yamaha-first; narrowband is sufficient after the cat. The ECU compares pre/post-cat switching for OBD (`efi.md` §8, `emissions_certification.md`) |
 | Knock | Detonation / ign safety | CP3 factory knock sensor (if fitted) — else add piezo |
 | Battery voltage | Injector/coil dead-time comp | STM32 ADC: divider + RC + TVS |
 

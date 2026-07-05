@@ -36,7 +36,7 @@
 
 | Upgrade | Spec | Status |
 |---|---|---|
-| Exhaust | **Premium full titanium system with a metal catalyst in the collector** — hand-built ti header + carbon/ti muffler (Akrapovič / SC-Project / Arrow CP3 systems as reference). **Must retain a high-flow cat** for Euro 5+ — *not* a de-cat race pipe. The build's statement engine piece | `[LOCKED]` direction / `[PENDING]` system |
+| Exhaust | **Bespoke titanium system — 3-into-1 collector → high-flow metal cat → DUAL under-tail outlets** (the statement piece). Cat kept near the engine for light-off but **tucked out of sight**; **pre-cat wideband + post-cat O₂** (closed-loop + OBD catalyst monitoring — `electronics.md` §2, `efi.md` §8), also out of the way. Heat-shielded past the seat/battery/electronics (§3 heat note). Not a de-cat race pipe | `[LOCKED]` bespoke |
 | Performance tune | Custom-ECU dyno tune to the actual cat + intake — recovers the response/midrange the restricted OEM map leaves on the table, while holding closed-loop stoich for the certificate. Not a separate buy: part of the ECU work (see `electronics.md`) | `[LOCKED]` |
 | Quickshifter | **Bidirectional quickshifter / autoblipper** — firmware-native: the ECU already owns ignition cut + ride-by-wire throttle, so clutchless up/down shifts cost almost nothing to add (see `electronics.md` §6) | `[LOCKED]` feature |
 | Intake | Velocity stacks + premium filter (DNA / Sprint) into a bespoke airbox; retune to suit | `[PENDING]` |
@@ -60,7 +60,7 @@
 | Temp sensing | Factory CLT + **added oil-temp sensor** → ECU (overtemp fan force-on + power derate, `efi.md` §9) | `[BUY]` |
 | Expansion / overflow | Bespoke expansion + catch tank, adequate volume, packaged in the frame | `[BESPOKE]` |
 
-**Packaging + interactions.** Airflow is the real constraint in the enclosed featherbed — force it with ducting + a fan shroud, resolved on the frame jig (`chassis.md`). Two couplings to hold: (1) the **radiator guard** (chassis protection) must be **airflow-open mesh**, not a choke; (2) the high-CFM fan runs hardest at **hot idle exactly when the alternator is weakest** — size the charging + LiFePO4 buffer for it (`electronics.md` §9).
+**Packaging + interactions.** Airflow is the real constraint in the enclosed featherbed — force it with ducting + a fan shroud, resolved on the frame jig (`chassis.md`). Three couplings to hold: (1) the **radiator guard** (chassis protection) must be **airflow-open mesh**, not a choke; (2) the high-CFM fan runs hardest at **hot idle exactly when the alternator is weakest** — size the charging + LiFePO4 buffer for it (`electronics.md` §9); (3) **under-tail exhaust heat** — the dual tail-exit system (§2) routes hot pipes + outlets past the seat, subframe, **LiFePO4 battery and cockpit electronics** (`electrical.md` §3, `electronics.md` §8). **Heat-shield and thermally separate, or relocate the battery/electronics away from the tail** — a real packaging conflict, worst in the hot climate the cooling is built for. Resolve on the jig.
 
 ## 4 · Fuel system
 
@@ -80,7 +80,7 @@
 
 ## 5 · Open engine items `[PENDING]`
 
-- **Exhaust system** — direction resolved (premium full titanium + metal cat in the collector — see §2); the **specific system is still `[PENDING]`** (Akrapovič / SC-Project / Arrow / bespoke). When chosen, add its country of origin per the sourcing rule.
+- **Exhaust system** — **resolved: bespoke ti, 3-into-1 + high-flow cat → dual under-tail outlets, pre/post-cat O₂ (§2).** In-house/commissioned fab; validate **heat-shielding vs the under-seat battery/electronics** (§3) and lean-angle/ground clearance.
 - *(Clutch resolved: retain the CP3's factory assist/slipper clutch — it comes with the engine/gearbox. Primary drive is internal to the CP3.)* **Actuation converted to hydraulic** — a Magura Hymec-class slave (MT-09-fit) or bespoke slave replaces the factory cable, so the **Brembo RCS clutch master** (matched to the brake — `bodywork.md` §3) can drive the retained clutch.
 
 ---
