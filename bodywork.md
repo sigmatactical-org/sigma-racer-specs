@@ -29,8 +29,8 @@
 
 | Item | Spec | Status |
 |---|---|---|
-| Clip-ons | Premium adjustable clip-ons to the FG 621 43 mm tubes (or bespoke) — café reach, above/below top yoke TBD by the yoke design (`chassis.md` §2) | `[PENDING]` |
-| Rearsets | Premium adjustable rearsets (billet) — shift/brake linkage to the CP3 gearbox + the rear master (`chassis.md`) | `[PENDING]` |
+| Clip-ons | **Decided: low, classic café** — clamped **at/below the top yoke** for the aggressive committed café position (the pure-café call, over the scrambler-comfort option). Premium **adjustable**, to the FG 621 43 mm tubes; final height set by the bespoke yoke (`chassis.md` §2) | `[LOCKED]` position / `[PENDING]` part |
+| Rearsets | **Premium adjustable billet, foldable, blacked-out** — Gilles Tooling (AT/DE) or Bonamici / Rizoma (IT), EU-sourced; **rear Brembo master integrated** into the pedal; shift linkage to the CP3 gearbox, **GP-shift optional**. Adjustable to fit a range of riders (manufacturer) | `[LOCKED]` spec / `[PENDING]` part |
 | Seat height / reach | Set by subframe + seat build; validate rider fit against the frozen chassis geometry | `[PENDING]` |
 | Mirrors | **Decided: round mirrors, mounted off the handlebars** (stalk / bracket off the top yoke or cowl — keeps the bar area clean, suits the minimalist look). Must meet road-legal field-of-view for approval | `[LOCKED]` type / `[PENDING]` part |
 
