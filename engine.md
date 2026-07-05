@@ -36,7 +36,7 @@
 
 | Upgrade | Spec | Status |
 |---|---|---|
-| Exhaust | **Bespoke titanium system — 3-into-1 collector → high-flow metal cat → DUAL under-tail outlets** (the statement piece). Cat kept near the engine for light-off but **tucked out of sight**; **pre-cat wideband + post-cat O₂** (closed-loop + OBD catalyst monitoring — `electronics.md` §2, `efi.md` §8), also out of the way. Heat-shielded past the seat/battery/electronics (§3 heat note). Not a de-cat race pipe | `[LOCKED]` bespoke |
+| Exhaust | **Bespoke titanium system — 3-into-1 collector → high-flow metal cat → short, stubby DUAL under-tail outlets** (compact, muscular — the statement piece; on-identity stubby-can look). Cat kept near the engine for light-off but **tucked out of sight**; **pre-cat wideband + post-cat O₂** (closed-loop + OBD catalyst monitoring — `electronics.md` §2, `efi.md` §8), also out of the way. Heat-shielded past the seat/battery/electronics (§3 heat note). Not a de-cat race pipe | `[LOCKED]` bespoke |
 | Performance tune | Custom-ECU dyno tune to the actual cat + intake — recovers the response/midrange the restricted OEM map leaves on the table, while holding closed-loop stoich for the certificate. Not a separate buy: part of the ECU work (see `electronics.md`) | `[LOCKED]` |
 | Quickshifter | **Bidirectional quickshifter / autoblipper** — firmware-native: the ECU already owns ignition cut + ride-by-wire throttle, so clutchless up/down shifts cost almost nothing to add (see `electronics.md` §6) | `[LOCKED]` feature |
 | Intake | Velocity stacks + premium filter (DNA / Sprint) into a bespoke airbox; retune to suit | `[PENDING]` |
@@ -80,7 +80,7 @@
 
 ## 5 · Open engine items `[PENDING]`
 
-- **Exhaust system** — **resolved: bespoke ti, 3-into-1 + high-flow cat → dual under-tail outlets, pre/post-cat O₂ (§2).** In-house/commissioned fab; validate **heat-shielding vs the under-seat battery/electronics** (§3) and lean-angle/ground clearance.
+- **Exhaust system** — **resolved: bespoke ti, 3-into-1 + high-flow cat → short, stubby dual under-tail outlets, pre/post-cat O₂ (§2).** In-house/commissioned fab; validate **heat-shielding vs the under-seat battery/electronics** (§3) and lean-angle/ground clearance.
 - *(Clutch resolved: retain the CP3's factory assist/slipper clutch — it comes with the engine/gearbox. Primary drive is internal to the CP3.)* **Actuation converted to hydraulic** — a Magura Hymec-class slave (MT-09-fit) or bespoke slave replaces the factory cable, so the **Brembo RCS clutch master** (matched to the brake — `bodywork.md` §3) can drive the retained clutch.
 
 ---
