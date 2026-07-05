@@ -60,7 +60,7 @@
 
 | Item | Order by | Lead | Arrives ~ | Gate / dependency |
 |---|---|---|---|---|
-| **Mule rig** (used CP3 + run stand + fuel/cooling/exhaust bench) | **T0 (Sep '26)** | — | T0 | Buy **first** — gates the whole ECU program; full BOM in `mule-runbook.md` |
+| **Mule rig** (used CP3 + run stand + fuel/cooling/exhaust bench) | **T0 (Sep '26)** | — | T0 | Buy **first** — gates the whole ECU program; full BOM in `development/mule-runbook.md` |
 | Display sample + driver board | T0 (Sep '26) | vendor sample | T0 + 4–6 wk | RFQ ready (6.86" 1280×480 MIPI 1000-nit) — `electronics.md` §8 |
 | Öhlins FG 621 fork | T0 + 1 (Oct '26) | catalog | ~2–4 wk | Confirm Zodiac package contents (axle/caliper mounts) at order |
 | **Kineo wheels (f+r)** | **T0 + 1 (Oct '26)** | **~18 wk** | **~Feb '27** | Order early — keys off the chosen 320 mm disc (`chassis.md`) |

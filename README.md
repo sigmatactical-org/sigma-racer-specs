@@ -28,7 +28,7 @@ Sigma is specified across ten files. This one is the **hub** (strategy, markets,
 | **`bodywork.md`** | Bodywork & ergonomics — tank, seat/cowl, subframe, fenders, rider triangle, hand/foot controls |
 | **`electronics.md`** | ECU hardware, sensor stack, connectors, i.MX 8M Plus digital cockpit (§8), charging & power budget (§9) |
 | **`efi.md`** | ECU **firmware** — real-time architecture, trigger decode, fuel/ignition, ride-by-wire safety, faults, comms, bench→dyno→road bring-up |
-| **`mule-runbook.md`** | ECU-on-mule how-to — concrete step-by-step to develop/prove the ECU on a used CP3, with per-phase gates |
+| **`development/mule-runbook.md`** | ECU-on-mule how-to — concrete step-by-step to develop/prove the ECU on a used CP3, with per-phase gates |
 | **`electrical.md`** | Electrical, lighting & harness — bespoke loom, power distribution, battery, lighting, switchgear |
 | **`emissions_certification.md`** | Euro 5+ technical target, per-market homologation paths, emissions hardware + road-legal equipment checklists |
 | **`build.md`** | Build plan — mass target, cost budget, procurement/lead times, phases, test & sign-off |
