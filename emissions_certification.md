@@ -40,7 +40,7 @@ Pass EU individual approval to Euro 5+ and it comfortably clears UK approval and
 
 *Emissions is one half of homologation; a new one-off must also pass the construction, braking and lighting requirements of the individual-approval / single-vehicle path (EU IVA / UK MSVA; CA/MX inspection). Confirm the exact list per market + vehicle class — items below are cross-referenced to where they're specified.*
 
-- [ ] **ABS** — EU/UK generally **mandate ABS on new >125 cc motorcycles**. Fit an aftermarket modulator integrated with the custom ECU wheel-speed sensing, or confirm individual-approval / small-series relief. **Unresolved — gates road approval.** (Rear-brake note, `chassis.md` §1; telltale in `electronics.md` §8.)
+- [ ] **ABS — decided: fit the donor's OEM Yamaha ABS** (modulator + front/rear wheel-speed sensors + tone rings, **new with the new CP3 donor**). Note the ABS mandate is a *type-approval* rule — Reg 168/2013 does **not** apply to individual approval, so a one-off is likely **exempt** (confirm per market) — but it's fitted anyway for safety on a 117 hp bike. Requires Kineo **tone-ring provision** (`chassis.md` §1) and the **ABS↔ECU CAN handshake** (`efi.md` §10–11). Telltale in `electronics.md` §8.
 - [ ] **Dual independent brakes** — front (Brembo M4 + twin 320 mm) and rear (Brembo single) — `chassis.md`.
 - [ ] **Lighting (all LED, ECE-approved)** — headlight low/high + position/DRL; tail + brake light; front + rear indicators; plate light; rear + side reflectors — `electrical.md` §4.
 - [ ] **Mirrors** — road-legal field of view (`bodywork.md` §2).

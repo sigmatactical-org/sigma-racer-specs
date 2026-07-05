@@ -47,7 +47,7 @@
 | Electrical / harness | Loom + PDM/fusing + LiFePO4 + LED lighting + switchgear (`electrical.md`) | **$2–2.5k** |
 | Bodywork | Bespoke tank + seat/cowl + clip-ons/rearsets + controls (`bodywork.md`) | **$4–5k** |
 | Fabrication / bespoke | Frame, swingarm, yokes, stem, axle, brackets, cradle — **materials + machining** (in-house labour excluded) | **$3–6k** |
-| Homologation | Approval/inspection per market **+ ABS solution (unresolved — could add materially)** (`emissions_certification.md`) | **$2–4k** |
+| Homologation | Approval/inspection per market (ABS resolved — donor OEM unit, harvested new with the donor, so no separate ABS spend) (`emissions_certification.md`) | **$2–4k** |
 | **Subtotal** | | **~$42–55k** |
 | Contingency (~15–20%) | one-off / bespoke overruns | **~$7–11k** |
 | **Total (parts/materials)** | | **~$50–65k** |

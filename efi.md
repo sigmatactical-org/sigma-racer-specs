@@ -145,7 +145,7 @@ Every action raises a coded fault to the cockpit; nothing silently degrades.
 
 | Link | Use |
 |---|---|
-| **FDCAN** | Cockpit data (RPM, load, temps, lambda, gear, faults, telltales — `electronics.md` §8 M7 cluster) + possible immobiliser handshake. Defined **data dictionary** (message IDs, scaling) is a shared contract with the cockpit team. |
+| **FDCAN** | Cockpit data (RPM, load, temps, lambda, gear, faults, telltales — `electronics.md` §8 M7 cluster) + possible immobiliser handshake + the **OEM Yamaha ABS node** (coexist / feed wheel-speed / satisfy its handshake — same class as the immobiliser; ABS decision in `chassis.md` §1). Defined **data dictionary** (message IDs, scaling) is a shared contract with the cockpit team. |
 | **USB (FS)** | Tuning host: read/write cal tables live, real-time gauges, fault log, firmware update path. |
 | **SPI** | CJ125 lambda, knock IC, external log flash. |
 

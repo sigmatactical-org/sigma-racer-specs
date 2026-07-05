@@ -13,7 +13,7 @@
 | Rear shock | **Öhlins STX 46 Blackline** — 46 mm high-pressure gas **monotube**, black body + spring. Order the **piggyback + compression-adjustable** configuration with the **hydraulic preload** option to get full adjustability (compression + rebound + preload) — *not all STX 46 variants carry the compression adjuster, so specify it explicitly.* Built to order: eye-to-eye length + spring rate derived from the **frozen** rising-rate linkage motion ratio & rider weight. ⚠ Ride height: length-adjustable lower eyelet is a TTX-tier feature and unconfirmed on the STX 46 — either option it, or set ride height via the built-to-order eye-to-eye length + linkage (the 170/60-17 rear's ~6 mm rise is baked in at order time). Matched to the FG 621 front | `[LOCKED]` / `[BUY]` built-to-order |
 | Monoshock linkage | Bespoke rising-rate linkage to the Öhlins shock | `[BESPOKE]` |
 | Swingarm | Bespoke fabricated, chain drive, matched to the linkage, sized for the **170 rear** (was 160 — see tire note). Check tire-to-swingarm/chain clearance at the 170 section width | `[BESPOKE]` |
-| Rear wheel | Kineo true-tubeless spoked — 17 × 4.5", matched to the front; includes 8-pin cush drive + Ergal sprocket carrier. Matte black (Italy). 4.5" rim suits the 170/60-17 | `[BUY]` made-to-order |
+| Rear wheel | Kineo true-tubeless spoked — 17 × 4.5", matched to the front; includes 8-pin cush drive + Ergal sprocket carrier. Matte black (Italy). 4.5" rim suits the 170/60-17. **⚠ Order with ABS tone-ring (pulse-ring) provision** — can't be added later; the ABS decision gates the wheel order | `[BUY]` made-to-order |
 | Rear tire | **170/60-17** — Pirelli Scorpion Rally STR (72V). *(Was 160/60-17; STR is not made in 160/60-17, so moved to 170/60-17, an available STR size that suits the 4.5" rim — see tire note.)* | `[LOCKED]` |
 
 **Tire note (Pirelli Scorpion Rally STR — front + rear).** Decision: run the road-biased rally tire for a scrambler-flavoured stance that still rides honestly on tarmac. Front **120/70-17 (58H)**, rear **170/60-17 (72V)** — a matched pair, both genuine STR sizes.
@@ -48,7 +48,7 @@
 | Master cylinder | Brembo — integrated into the rearset pedal (`bodywork.md` §2) | `[BUY]` |
 | Line | Braided stainless — Spiegler / Goodridge (as front) | `[BUY]` |
 
-**⚠ ABS — homologation.** EU/UK type approval for a new **>125 cc** motorcycle generally **mandates ABS**. A bespoke standalone build has two paths: fit an aftermarket ABS modulator (e.g. Bosch) integrated with the custom ECU wheel-speed sensing, or confirm whether the individual-approval / small-series route grants relief. **This is unresolved and gates road approval** — flag it in the road-legal checklist (`emissions_certification.md`). The cockpit already contemplates an ABS telltale (`electronics.md` §8).
+**ABS — decided: donor OEM Yamaha ABS.** Fit the new CP3 donor's **OEM Yamaha ABS** — modulator + front/rear wheel-speed sensors + tone rings, **new with the donor** (no calibratable standalone road ABS exists to buy; individual approval likely *exempts* a one-off since Reg 168/2013's ABS mandate is type-approval only — confirm per market — but it's fitted anyway for safety). Requires: **Kineo wheels ordered with tone-ring provision** (front + rear rows), front + rear brake lines routed **through the modulator**, and the **ABS↔ECU CAN handshake** (`efi.md` §10–11, same class as the immobiliser). Cockpit ABS telltale already provided (`electronics.md` §8). Logged in `emissions_certification.md`.
 
 ### Final drive (chain & gearing)
 
@@ -81,7 +81,7 @@
 
 | Item | Spec | Status |
 |---|---|---|
-| Front wheel | Kineo true-tubeless spoked — 17 × 3.5", 28-spoke, forged 7000-alloy hub + CNC billet rim, matte black. TÜV-certified. Made to order around the 32 mm axle + chosen discs (Italy). | `[BUY]` made-to-order |
+| Front wheel | Kineo true-tubeless spoked — 17 × 3.5", 28-spoke, forged 7000-alloy hub + CNC billet rim, matte black. TÜV-certified. Made to order around the 32 mm axle + chosen discs (Italy). **⚠ Order with ABS tone-ring (pulse-ring) provision** — can't be added later; the ABS decision gates the wheel order | `[BUY]` made-to-order |
 | Front tire | **120/70-17 (58H)** — Pirelli Scorpion Rally STR. ⚠ 58H = 210 km/h; verify vs certified top speed for EU/UK approval (see tire note + `emissions_certification.md`) | `[LOCKED]` |
 | Front axle | **32 mm — use the FG 621's supplied axle.** The fork is built around a 32 mm wheel axle and ships with axle sleeve/spacer hardware; the made-to-order Kineo wheel is built with bearings/spacers to suit the 32 mm axle. ⚠ Confirm exact box contents (axle + how many spacer sets) with Zodiac/Öhlins — a bespoke spindle is most likely *not* needed | `[BUY]` / confirm contents |
 | Front discs | Twin 320 mm floating — Brembo; pick any stocked 320 mm floating pattern, Kineo builds the carriers to the chosen disc | `[BUY]` |
