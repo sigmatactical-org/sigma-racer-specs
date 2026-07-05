@@ -77,7 +77,7 @@ Obligations a one-off never carried — these are now core scope:
 - [ ] **Anti-theft / steering lock** — required against unauthorized use; ties to the immobiliser decision (`electronics.md` §7).
 - [ ] **Chain guard** — final-drive contact protection (`chassis.md`).
 - [ ] **Sidestand** + start interlock (`electrical.md` §5).
-- [ ] **Noise / drive-by sound level** — approval limit; ties to the catalysed exhaust (`engine.md` §2).
+- [ ] **Noise / drive-by sound level** — approval limit; **the binding floor on the short side-exit exhaust** (`engine.md` §2 — too short = too loud to pass). Size the muffler to the limit.
 - [ ] **EMC (electromagnetic compatibility)** — a type-approval item, and a real design constraint: the custom ECU + Linux cockpit + switching DC-DC must meet emission/immunity limits (`electronics.md`).
 
 ## OBD note

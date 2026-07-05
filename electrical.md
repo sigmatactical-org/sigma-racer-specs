@@ -57,7 +57,7 @@
 | Type | **LiFePO4** — the idle/transient buffer chosen in `electronics.md` §9; lighter than lead-acid | `[BUY]` |
 | Sizing | To cold-crank the CP3 + hold the worst-case idle deficit (~200 W short-term, per the §9 load budget) | `[PENDING]` |
 | Charging profile | Lithium-appropriate regulated voltage; confirm the reg/rec set-point suits LiFePO4 + a cold-behaviour check | `[PENDING]` |
-| Placement | Central + low for the geometry target (`bodywork.md`). ⚠ **Not near the under-tail exhaust** — the dual tail-exit system routes heat past the tail (`engine.md` §3); keep the LiFePO4 + electronics thermally clear / shielded, or mount forward | `[PENDING]` |
+| Placement | Central + low for the geometry target (`bodywork.md`); under-seat is fine — the exhaust is now a short **side-exit** (`engine.md` §2), so the battery + electronics are clear of exhaust heat | `[PENDING]` |
 
 ## 4 · Lighting
 
