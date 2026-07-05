@@ -35,6 +35,8 @@ Characterize every factory CP3 sensor's type, range and connector on the bench �
 
 ## 3 · Connector Architecture
 
+*Built to the **mil-spec** reliability standard (`electrical.md` §0): M22759 wire, mil-derived connectors (Deutsch Autosport / Souriau 8STA on critical runs, DTM/AMPSEAL elsewhere), M22520 crimps, minimal connector count.*
+
 | Role | Connector | Notes |
 |---|---|---|
 | Main ECU harness | AMPSEAL 16 (23 or 35-pin) | IP67, compact, vibration-resistant; 14–16 A/terminal |
@@ -122,6 +124,8 @@ The two domains are isolated: a maps/app crash on the A53 side cannot take down 
 | Vehicle bus | **Dual CAN-FD** (native on the 8M Plus) to the custom ECU | Feeds the M7 safety cluster |
 
 **Software.** A full embedded-Linux program on the A53 domain: **Yocto BSP** (or **Android Automotive OS**, NXP-supported, for a phone-like UX) hosting the maps engine, camera pipelines, connectivity stacks and HMI framework — **Qt**, or **Slint** to keep some Rust coherence (Slint runs on both i.MX Linux and MCUs). Separate **Zephyr** safety firmware on the M7 for telltales + CAN, plus boot orchestration between the two domains.
+
+**HMI theme — tactical.** Per the army × café identity (`README.md`), the cockpit UI reads as **military instrumentation, not glossy infotainment**: high-contrast, glanceable, monochrome/muted with a single accent, mission-computer layout. Matches the sealed mil-spec hardware (`electrical.md` §0).
 
 **Reality check.** This converts "instrument cluster" into "cockpit + infotainment" — a second serious embedded system alongside the Rust ECU, and a full Linux program (BSP + maps + cameras + connectivity), not a weekend cluster. Two things to nail early: camera count/resolution vs the ISP ceiling, and the automotive power/EMC design for a Linux computer hung off a motorcycle loom.
 

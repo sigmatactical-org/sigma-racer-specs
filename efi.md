@@ -130,7 +130,7 @@ Drivers: 3× low-side injector outputs, hardware-timed (one per cylinder), from 
 | Lambda sensor fail | range/heater fault | drop to open-loop map, warn |
 | CLT/IAT/MAP fail | range/rationality | default + limp map, warn |
 | Overtemp (CLT) | threshold | fan force-on, power limit, warn (`electronics.md` §9) |
-| Undervoltage | Vbat | shed loads (PDM, `electrical.md`), protect start |
+| Undervoltage | Vbat | shed non-critical load relays (ECU-driven, `electrical.md`), protect start |
 | Firmware fault/hang | IWDG/WWDG | reset + limp restart |
 
 Every action raises a coded fault to the cockpit; nothing silently degrades.

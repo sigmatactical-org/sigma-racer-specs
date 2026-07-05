@@ -48,7 +48,7 @@
 | Powertrain | CP3 engine (crate/supply — see finding 1; or ~$9–11k whole donor) + ti exhaust + cooling + covers (`engine.md`) | **$12–16k** |
 | Chassis / suspension / brakes | Öhlins FG 621 + STX 46 + Kineo pair + Brembo f+r + bearings/chain/tires (`chassis.md`) | **$11–12k** |
 | Electronics / cockpit | ECU BOM + Toradex Verdin SoM + bespoke carrier + display + cameras/modem + wideband (`electronics.md`) | **$2–3k** |
-| Electrical / harness | Loom + PDM + LiFePO4 + LED lighting + switchgear (`electrical.md`) | **$2–2.5k** |
+| Electrical / harness | Loom + fuse/relay box + LiFePO4 + LED lighting + switchgear (`electrical.md`) | **$2–2.5k** |
 | Bodywork | Bespoke tank + seat/cowl + clip-ons/rearsets + controls (`bodywork.md`) | **$4–5k** |
 | Fabrication | Frame, swingarm, yokes, stem, axle, brackets — **materials + machining** | **$3–6k** |
 | **Per-unit parts subtotal** | | **~$34–45k** |
@@ -103,7 +103,7 @@
 2. **Frame jig + chassis geometry** — freeze rake/trail/wheelbase/ride-height + the rising-rate linkage → *only then* order the built-to-order shock (`chassis.md`).
 3. **Rolling mock-up** — frame + forks + wheels + engine cradle; validate clearances (tire-to-arm/chain, radiator packaging).
 4. **Subsystems** — cooling, exhaust, electrical loom, cockpit, bodywork mock.
-5. **Wiring + first start** — bespoke loom, PDM, charging; static run on the new engine.
+5. **Wiring + first start** — bespoke loom, fuse/relay box, charging; static run on the new engine.
 6. **Tune + validation** — dyno tune to the cat, closed-loop lambda, quickshifter; road-test shakedown.
 7. **Homologation** — emissions + road-legal equipment inspection/approval per market (`emissions_certification.md`).
 
@@ -116,6 +116,7 @@
 | Charging balance | Measured stator output vs summed load at idle (`electronics.md` §9) | `[PENDING]` |
 | Emissions | Closed-loop stoich to Euro 5+ limits (`emissions_certification.md`) | `[PENDING]` |
 | Road-legal equipment | Lights/horn/mirrors/speedo/plate for approval | `[PENDING]` |
+| **Electrical durability (bulletproof)** | **Vibration + thermal-cycle + IP/ingress + salt-spray + EMC** on the harness, connectors, instruments and ECU/cockpit — the `electrical.md` §0 standard, per unit-type before production | `[PENDING]` |
 
 ---
 

@@ -81,7 +81,7 @@
 ## 5 · Open engine items `[PENDING]`
 
 - **Exhaust system** — direction resolved (premium full titanium + metal cat in the collector — see §2); the **specific system is still `[PENDING]`** (Akrapovič / SC-Project / Arrow / bespoke). When chosen, add its country of origin per the sourcing rule.
-- *(Clutch resolved: retain the CP3's factory assist/slipper clutch — it comes with the engine/gearbox. Primary drive is internal to the CP3.)*
+- *(Clutch resolved: retain the CP3's factory assist/slipper clutch — it comes with the engine/gearbox. Primary drive is internal to the CP3.)* **Actuation converted to hydraulic** — a Magura Hymec-class slave (MT-09-fit) or bespoke slave replaces the factory cable, so the **Brembo RCS clutch master** (matched to the brake — `bodywork.md` §3) can drive the retained clutch.
 
 ---
 
