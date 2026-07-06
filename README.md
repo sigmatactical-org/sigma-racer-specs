@@ -31,7 +31,7 @@ Sigma is specified across nine files. This one is the **hub** (strategy, markets
 | **`efi.md`** | ECU **firmware** — real-time architecture, trigger decode, fuel/ignition, ride-by-wire safety, faults, comms, bench→dyno→road bring-up |
 | **`electrical.md`** | Electrical, lighting & harness — bespoke loom, power distribution, battery, lighting, switchgear |
 | **`emissions_certification.md`** | Euro 5+ technical target, per-market homologation paths, emissions hardware + road-legal equipment checklists |
-| **`build.md`** | Build plan — mass target, cost budget, procurement/lead times, phases, test & sign-off |
+| **`build.md`** | Build plan — mass target, procurement/lead times, phases, test & sign-off (economics maintained internally) |
 
 ---
 
