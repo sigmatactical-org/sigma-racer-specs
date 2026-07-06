@@ -51,7 +51,7 @@
 
 11. [ ] Bring up the **microRusEFI board** (STM32F767 + TLE8888 + TLE9201 — in stock at rusEFI, ~$375; **buy two**, bench + spare; VR-input variant unless Phase 1 says Hall): clocks, power rails, defmt/RTT, USB.
 12. [ ] Verify peripherals: timer input-capture, compare outputs, ADC-DMA, TLE8888 SPI + window watchdog, TLE9201 ETB bridge, CAN loopback (**classic CAN, not FD** — dictionary frames ≤8 bytes). Confirm the **analog channel budget** (dual APP + dual TPS + MAP + CLT + IAT + Vbat ≈ 8 ch) and pick the **wideband interface** (rusEFI CAN wideband module vs CJ125 breakout).
-13. [ ] Build and continuity-test the **development harness** to the documented pinouts.
+13. [ ] Build and continuity-test the **development harness** to the documented pinouts — stage-1 wiring (passive logger, no outputs) is specified in `stage1-wiring.md`.
 
 **Gate 2:** all peripherals verified; harness rings out clean.
 
