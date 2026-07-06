@@ -29,7 +29,7 @@
 1. [ ] **Receive the new XSR900 GP** (on order); log VIN + model year (2024+ gen-3, Euro 5+ — the production-donor generation).
 2. [ ] Get **Yamaha service data + wiring diagrams** for that exact year.
 3. [ ] **Keep the bike complete** — work non-invasively as long as possible (characterize via existing connectors, sniff CAN at the diagnostic port). ⚠ Replacing the ECU/loom ends the factory warranty on affected systems — cross that line deliberately, at Phase 6, not casually. Move to a run stand only if/when bench isolation demands it.
-3b. [ ] **Chassis measurements while it's in hand** (`chassis.md` §2): measure the steering stem dims + confirm the headstock bearing set (upper 25×47×15 / lower 30×55×17) on this actual bike — it *is* the locked XSR900 GP geometry reference, and this closes the "verify on a gen-2 donor before cutting journals" flag.
+3b. [ ] **Chassis measurements while it's in hand** (`chassis.md` §2): measure the steering stem dims + confirm the headstock bearing set (upper 25×47×15 / lower 30×55×17) on this actual bike — it *is* the locked XSR900 GP geometry reference, and this closes the "verify on a gen-2 donor before cutting journals" flag. Also measure the **stock fork**: overall length (axle centre → top cap), installed height (protrusion above top clamp), and axle offset — baseline for the FG 621 swap (800 mm / 120 mm stroke; Yamaha publishes no stock figure).
 4. [ ] Inventory the harvest: throttle body, all sensors, coils, injectors, in-tank pump, stator + reg/rec, radiator + fan — confirm each is present and undamaged.
 5. [ ] Photograph and label **every OEM connector** before disturbing the loom.
 
