@@ -28,7 +28,7 @@
 
 | Item | Choice | Status |
 |---|---|---|
-| MCU | **STM32G474** (motor-control grade — 5× fast ADC, HRTIM, adv. timers, FDCAN, CORDIC/FMAC, USB FS). Baseline fallback F405; headroom H743 for on-board knock DSP (`electronics.md` §6) | `[LOCKED]` direction |
+| ECU board | **microRusEFI (bought, proven) — STM32F767 + TLE8888 smart injector driver + TLE9201 ETB H-bridge**; firmware is ours (Rust/Embassy, engine-agnostic core + CP3 profile, MIT/Apache concept-port of rusEFI — see the `sigma-racer-efi` repo). **Supersedes the earlier custom-G474-board direction**: proven open hardware deletes the PCB NRE, the bespoke firmware stays the moat. Custom board remains a possible production optimization later | `[LOCKED]` (in code) |
 | Language / async | **Rust**, `embassy-stm32` HAL + Embassy executor for the async domain; interrupts + PAC for the RT domain | `[LOCKED]` |
 | Logging | **defmt** over RTT (bench) + framed logs over USB | `[LOCKED]` |
 | Debug / flash | **probe-rs** (CMSIS-DAP / ST-Link) | `[LOCKED]` |

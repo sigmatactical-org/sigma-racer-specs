@@ -78,7 +78,7 @@ Characterize every factory CP3 sensor's type, range and connector on the bench �
 | Safety | Independent watchdog (IWDG) + brown-out detect; protected / level-shifted 5 V sensor inputs; throttle safety monitor |
 | Aux PWM/GPIO | Fuel pump, fan, tacho, MIL (idle is handled by the ride-by-wire body) |
 
-**Family:** the ride-by-wire motor control nudges this toward **STM32G474** (motor-control-grade — fast ADCs, timer/PWM for the throttle H-bridge, CORDIC, FDCAN), now sized for a 3-cylinder + RbW controller. **STM32F405/F407** remains a proven baseline (168 MHz, FPU, 14 timers, 3× ADC, 2× CAN — rusEFI's original target). Headroom: **STM32H743 / F767** (more RAM/flash, FDCAN, faster ADC) for on-board knock DSP + high-rate logging. All Embassy-supported.
+**Platform — decided in code (`sigma-racer-efi`): the microRusEFI board** — STM32F767, TLE8888 smart low-side driver (injectors/aux), TLE9201 ETB H-bridge for the ride-by-wire, rusEFI's proven open hardware — running **our own Rust/Embassy firmware** (engine-agnostic core + CP3 profile). This supersedes the custom-G474-board direction: buy the proven board, keep the bespoke firmware as the moat; a custom/cost-reduced board remains a later production option. The MCU requirements table above still governs any such respin.
 
 ## 7 · Open Electronics Items `[PENDING]`
 
