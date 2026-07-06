@@ -12,6 +12,31 @@ Authoritative per-pin view: [rusefi.com/docs/pinouts/microrusefi](https://rusefi
 
 ---
 
+## Session 0 first: side-by-side against the OEM ECU
+
+Before any characterization is trusted, run the bike **stock** and compare
+the MRE's readings against the OEM ECU's own reporting — the factory
+calibration is the reference instrument, and this session is read-only
+(warranty intact, OEM loom untouched):
+
+1. **CAN/OBD logging:** USB-CAN adapter on the diagnostic connector
+   (`sigma-instrumentation` SocketCAN + `dbc-rs` decode); log OEM-reported
+   CLT, IAT, TPS, RPM, battery V. ⚠ Verify the GP's diag connector pinout
+   and whether it serves standard OBD PIDs (Euro 5+ mandates OBD) or
+   Yamaha-proprietary frames — same session as the immobiliser sniff
+   (runbook Phase 1, item 10).
+2. **MRE voltage taps (Mode B rules below):** battery sense, plus the CLT
+   node and TPS signal into **AV inputs** (voltage-only).
+3. **Warmup cycle** cold → hot: OEM °C vs tapped volts **derives the CLT
+   transfer function empirically** — settles the 3.3 V-vs-5 V NTC
+   divider-top question with data, and covers runbook Phase 1 item 8
+   without pulling a sensor. A grip sweep does the same for TPS/APP.
+4. Time-align both logs (the DL→MDF4 converter's job); disagreement beyond
+   tolerance = fix the firmware constant before proceeding.
+
+Only after Session 0 agrees does Mode A (invasive, MRE-owns-sensors)
+characterization begin.
+
 ## Choose the mode before touching the harness
 
 **Mode A — MRE owns the sensors (primary).** OEM ECU disconnected, engine
