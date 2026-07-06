@@ -41,7 +41,7 @@
 6. [ ] **Crank/cam sensor:** determine VR vs Hall; scope the signal while spinning the engine on the starter (plugs out). Capture the **tooth / missing-tooth pattern** and the cam pattern. Save the waveforms.
 7. [ ] **TDC reference:** find TDC #1 (via the crank access) and **measure the gap-to-TDC offset** against the trigger pattern.
 8. [ ] **Analog sensors:** record transfer functions — CLT + IAT (resistance vs temp), MAP (V vs pressure), dual TPS + dual APP (V vs position across full travel).
-9. [ ] **Loads:** measure injector + coil resistance; confirm connector pinouts.
+9. [ ] **Loads:** measure injector + coil resistance; confirm connector pinouts. **Determine coil type: smart (integrated igniter, logic-level drive) vs dumb inductive** — the MRE's ignition outputs drive smart coils only; dumb coils need external IGBT modules.
 10. [ ] **Immobiliser/CAN:** sniff the OEM bus at key-on/crank; log what the engine expects to start (`efi.md` §10).
 
 **Gate 1:** a characterization sheet — trigger pattern, TDC offset, every sensor curve, injector/coil data, immobiliser findings. **These become the firmware's starting constants.**
@@ -49,8 +49,8 @@
 ## Phase 2 · ECU hardware bring-up (bench, no engine)
 *(`efi.md` stage 2)*
 
-11. [ ] Bring up the **G474 board:** clocks, power rails, defmt/RTT, USB.
-12. [ ] Verify peripherals: timer input-capture, compare outputs, ADC-DMA, HRTIM, FDCAN loopback, SPI (CJ125).
+11. [ ] Bring up the **microRusEFI board** (STM32F767 + TLE8888 + TLE9201 — in stock at rusEFI, ~$375; **buy two**, bench + spare; VR-input variant unless Phase 1 says Hall): clocks, power rails, defmt/RTT, USB.
+12. [ ] Verify peripherals: timer input-capture, compare outputs, ADC-DMA, TLE8888 SPI + window watchdog, TLE9201 ETB bridge, CAN loopback (**classic CAN, not FD** — dictionary frames ≤8 bytes). Confirm the **analog channel budget** (dual APP + dual TPS + MAP + CLT + IAT + Vbat ≈ 8 ch) and pick the **wideband interface** (rusEFI CAN wideband module vs CJ125 breakout).
 13. [ ] Build and continuity-test the **development harness** to the documented pinouts.
 
 **Gate 2:** all peripherals verified; harness rings out clean.

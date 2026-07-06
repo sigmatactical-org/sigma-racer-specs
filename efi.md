@@ -146,7 +146,7 @@ Every action raises a coded fault to the cockpit; nothing silently degrades.
 
 | Link | Use |
 |---|---|
-| **FDCAN** | Cockpit data (RPM, load, temps, lambda, gear, faults, telltales — `electronics.md` §8 M7 cluster) + possible immobiliser handshake + the **OEM Yamaha ABS node** (coexist / feed wheel-speed / satisfy its handshake — same class as the immobiliser; ABS decision in `chassis.md` §1). Defined **data dictionary** (message IDs, scaling) is a shared contract with the cockpit team. |
+| **CAN (classic)** | Cockpit data (RPM, load, temps, lambda, gear, faults, telltales — `electronics.md` §8 M7 cluster) + possible immobiliser handshake + the **OEM Yamaha ABS node** (coexist / feed wheel-speed / satisfy its handshake — same class as the immobiliser; ABS decision in `chassis.md` §1). *Classic CAN, ≤8-byte frames — the microRusEFI F7 has no FDCAN; the cockpit's FD controllers speak classic natively.* Defined **data dictionary** (message IDs, scaling) is a shared contract with the cockpit team — implemented as the shared `no_std` crate in `sigma-instrumentation`. |
 | **USB (FS)** | Tuning host: read/write cal tables live, real-time gauges, fault log, firmware update path. |
 | **SPI** | CJ125 lambda, knock IC, external log flash. |
 
