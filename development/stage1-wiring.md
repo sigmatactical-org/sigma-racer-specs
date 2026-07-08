@@ -111,12 +111,11 @@ orientations if the gap signature looks wrong.
 1. **Battery sense:** compare `vbatt_v` against a multimeter at the battery.
    Expect agreement within ~0.1 V (scaling constant `VBATT_DIVIDER`).
 2. **CLT/IAT sanity (Mode A):** with a known 2.5 kΩ resistor across the CLT
-   input, `clt_c` should read ≈25 °C. ⚠ If it reads high by a consistent
-   factor, the NTC math's divider-top assumption is wrong — the board pulls
-   AT inputs to **5 V** while `sensors.rs` models the bias at ADC vref
-   (3.3 V), and the global 1.68 input divider may or may not sit in the AT
-   path. **This resistor check settles it empirically**; fix the constant in
-   firmware before logging real temperatures. (Known open item.)
+   input, `clt_c` should read ≈25 °C. The NTC model is parametrized in
+   firmware (`NtcConfig`: `bias_supply_volts` default **5 V** per the rusEFI
+   wiring doc, `input_divider` default 1.0 — both ⚠ [MEASURE]); **this
+   resistor check + the Session-0 warmup fit settle both constants
+   empirically** before real temperatures are logged.
 3. **TPS/AV channels:** feed 0 V and a known mid-scale voltage; confirm
    `tps_map_v` tracks (the 1.68 divider is applied in firmware).
 4. **Trigger:** spin the engine on the starter, plugs out (runbook Phase 1,
