@@ -61,7 +61,7 @@ Obligations a one-off never carried — these are now core scope:
 - [ ] Evap / charcoal canister + purge valve
 - [ ] Catalysed exhaust system — ties to the open exhaust decision in `engine.md`
 - [ ] **OBD to the Euro 5 stage** — MIL + catalyst/misfire/sensor monitoring in the ECU (`efi.md` §8)
-- [ ] **Tire speed rating vs certified top speed** — fitted tires must be rated ≥ the certified top speed. Front is Pirelli Scorpion Rally STR 120/70-17 **58H (210 km/h)**; **addressed by the ≤210 km/h top-speed target (`build.md` §1)** — gear/declare to stay within the 58H front; confirm at approval. Rear 170/60-17 72V (240 km/h) is clear. (Tire note in `chassis.md`.)
+- [ ] **Tire speed rating vs certified top speed** — fitted tires must be rated ≥ the certified top speed. Front is Pirelli Scorpion Rally STR 120/70-17 **58H (210 km/h)**; **addressed by the ≤210 km/h declared top speed, enforced by the RbW firmware limiter (`efi.md` §6; gearing locked 16/45 — `chassis.md`)**; confirm the declared/limited value at approval. Rear 170/60-17 72V (240 km/h) is clear. (Tire note in `chassis.md`.)
 
 ## Road-legal equipment (approval beyond emissions)
 

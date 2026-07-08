@@ -86,6 +86,7 @@ Drivers: 3× low-side injector outputs, hardware-timed (one per cylinder), from 
 - **Dwell control** vs Vbat to a target coil charge; over-dwell protection; drive the **CP3 factory coil-on-plug** (one output per cylinder).
 - **Knock** — factory knock sensor (or piezo) → windowed detection; **per-cylinder retard** + recovery ramp; conservative until characterized.
 - **Rev limiter** — soft (progressive spark retard/cut) → hard (spark + fuel cut). Never leave fuel injecting with spark cut on the cat (raw-fuel protection ties to emissions).
+- **Top-speed limiter — 210 km/h declared** (`chassis.md` gearing lock): RbW torque cap as wheel speed approaches the limit — enforces the homologated top speed so the 58H front tire rating holds while the 16/45 gearing serves the ride. Progressive (no hard cut at speed); part of the declared type.
 - **No-sync = no spark** (gated by §4 confidence). Spark scheduling identical to fuel: pre-armed compare events.
 
 ## 7 · Ride-by-wire (safety-critical) — the crux

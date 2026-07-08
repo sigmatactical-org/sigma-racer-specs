@@ -57,7 +57,7 @@
 | Chain | Premium X/Z-ring — DID / RK; **520** for lightness on a ~117 hp triple (525 if load margin wanted) | `[BUY]` |
 | Front sprocket | Steel, on the CP3 countershaft; tooth count set by the gearing choice | `[BUY]` |
 | Rear sprocket | On the Kineo **8-pin cush-drive + Ergal sprocket carrier** (§1); alloy or steel | `[BUY]` |
-| Gearing | **Proposed (2026-07, full math in dev notes `gearing.md`): 16/45 in 520** — the donor ratio on verified internals (primary 1.681, 6th 1.037; 2024 owner's manual). Gearing alone can't honor ≤210 km/h without wrecking the cruise (~6.5k @ 130 km/h); instead a **firmware top-speed limiter at 210 km/h (RbW)** enforces the declared max — 58H front legal, cruise stays 5.3k @ 130. One rear tooth = ~6 % — carrier makes experiments cheap | `[PROPOSED]` confirm to lock |
+| Gearing | **LOCKED (2026-07, full math in dev notes `gearing.md`): 16/45 in 520** — the donor ratio on verified internals (primary 1.681, 6th 1.037; 2024 owner's manual). Gearing alone can't honor ≤210 km/h without wrecking the cruise (~6.5k @ 130 km/h); instead a **firmware top-speed limiter at 210 km/h (RbW torque cap — `efi.md` §6)** enforces the declared max — 58H front legal, cruise stays 5.3k @ 130. One rear tooth = ~6 % — carrier makes experiments cheap | `[LOCKED]` |
 | Speed pickup | Wheel-speed signal for the cockpit speedo + any ABS — source (front wheel / countershaft) read by the ECU (`electronics.md`) | `[PENDING]` |
 
 **Gearing ↔ homologation.** Top speed set by the final drive must not exceed the fitted tire's speed rating; if a taller ratio pushes past the 58H front's 210 km/h, either regear, restrict/declare top speed, or revisit the front tire (tire note + `emissions_certification.md`).
