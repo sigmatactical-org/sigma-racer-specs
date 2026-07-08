@@ -21,10 +21,11 @@ calibration is the reference instrument, and this session is read-only
 
 1. **CAN/OBD logging:** USB-CAN adapter on the diagnostic connector
    (`sigma-instrumentation` SocketCAN + `dbc-rs` decode); log OEM-reported
-   CLT, IAT, TPS, RPM, battery V. ⚠ Verify the GP's diag connector pinout
-   and whether it serves standard OBD PIDs (Euro 5+ mandates OBD) or
-   Yamaha-proprietary frames — same session as the immobiliser sniff
-   (runbook Phase 1, item 10).
+   CLT, IAT, TPS, RPM, battery V. Protocol known (desk-checked,
+   `donor-desk-checks.md`): 6-pin RED connector, **ISO 15765-4 CAN,
+   11-bit, 500 kbaud** — use the 6-pin→OBD2 adapter cable; first
+   10 minutes on the bike confirm which standard PIDs it serves. Same
+   session as the immobiliser sniff (runbook Phase 1, item 10).
 2. **MRE voltage taps (Mode B rules below):** battery sense, plus the CLT
    node and TPS signal into **AV inputs** (voltage-only).
 3. **Warmup cycle** cold → hot: OEM °C vs tapped volts **derives the CLT
