@@ -40,3 +40,9 @@ Sigma is specified across nine files. This one is the **hub** (strategy, markets
 1. **Homologation is a manufacturing program, not paperwork** — Sigma is certified **for sale** (Euro 5+ via cat + closed-loop + evap + OBD; ABS mandatory), so it's **type-approval** per market (EU/UK small-series, Canada CMVSS, Mexico NOM; US EPA/CARB/NHTSA later) plus Conformity of Production and a ride-by-wire functional-safety case. Far heavier than a one-off — treat it as a first-class workstream. Full detail in `emissions_certification.md`.
 2. **Chassis caveats** — steering-stem safety-criticality and bespoke cost/lead time live in `chassis.md`.
 3. **Electronics caveats** — custom ECU, standalone brain, CP3 characterization and the cockpit live in `electronics.md`.
+
+## Brand & artwork
+
+© Sigma Tactical Group. **All rights reserved.**
+
+The Sigma Tactical Group name, logos, marks, artwork, and visual identity are **proprietary**. They are not covered by this repository's source-code license. See [BRANDING.md](BRANDING.md).
